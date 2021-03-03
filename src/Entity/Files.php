@@ -42,6 +42,12 @@ class Files
      */
     private $download;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Categories::class, inversedBy="files_id")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $category_id;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -103,6 +109,18 @@ class Files
     public function setDownload(int $download): self
     {
         $this->download = $download;
+
+        return $this;
+    }
+
+    public function getCategoryId(): ?Categories
+    {
+        return $this->category_id;
+    }
+
+    public function setCategoryId(?Categories $category_id): self
+    {
+        $this->category_id = $category_id;
 
         return $this;
     }
