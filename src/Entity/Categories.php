@@ -25,7 +25,7 @@ class Categories
     private $name;
 
     /**
-     * @ORM\OneToMany(targetEntity=files::class, mappedBy="category_id")
+     * @ORM\OneToMany(targetEntity=Files::class, mappedBy="category_id")
      */
     private $files_id;
 
