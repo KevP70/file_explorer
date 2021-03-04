@@ -1,0 +1,40 @@
+body {
+  background-color: #fff;
+  display: flex;
+  margin: 0; }
+
+#navbar {
+  background-color: #232323;
+  margin-right: 50px;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #navbar h2 {
+    height: 50px;
+    color: #fff; }
+  #navbar nav {
+    padding-left: 10px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    #navbar nav a {
+      color: #fff;
+      width: 80%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      text-transform: none;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
+      #navbar nav a img {
+        height: 30px;
+        width: 30px;
+        padding-right: 10px; }
+
+/*# sourceMappingURL=app.css.map */
